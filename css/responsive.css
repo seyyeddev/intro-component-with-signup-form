@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background: var(--red) url(../images/bg-intro-desktop.png) center;
+    }
+
+    .main {
+        padding: 3rem;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    /* section  intro */
+    .intro {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+
+    /* form section */
+    .form {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        padding: 6rem;
+    }
+
+    /* section  intro */
+    .intro__title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        padding: 8rem;
+    }
+
+    /* section  intro */
+    .intro__caption {
+        font-size: 1.1rem;
+        font-weight: var(--regular);
+    }
+}

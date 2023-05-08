@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- section intro -->
+        <div class="col col-md-6 col-lg-7">
+          <div class="intro">
+            <h1 class="intro__title">Learn to code by watching others</h1>
+            <p class="intro__caption">See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- form section -->
+        <div class="col col-md-6 col-lg-5">
+          <div class="message">
+            <h2 class="message__price"> <span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+          </div>
+
+          <form  method="post" class="form">
+            <label class="form__label" for="fname">
+              <input type="text" name="fname" id="fname" class="form__input" placeholder="First Name">
+              <p class="form__error"><i>First Name can not be empty</i></p>
+            </label>
+
+            <label class="form__label" for="lname">
+              <input type="text" name="lname" id="lname" class="form__input" placeholder="Last Name">
+              <p class="form__error"><i>Last Name can not be empty</i></p>
+            </label>
+
+            <label class="form__label" for="email">
+              <input type="email" name="email" id="email" class="form__input" placeholder="Email Address">
+              <p class="form__error"><i>Looks like this is not an email</i></p>
+            </label>
+
+            <label class="form__label" for="password">
+              <input type="password" name="password" id="password" class="form__input" placeholder="Password">
+              <p class="form__error"><i>Password can not be empty</i></p>
+            </label>
+            
+            <button type="submit" class="form__btn">Claim Your Free Trial</button>
+            <p class="form__caption">By clicking the button, you are agreeing to our
+              <a class="form__terms" href="#">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+
+<script src="./js/script.js"></script>
+</html>

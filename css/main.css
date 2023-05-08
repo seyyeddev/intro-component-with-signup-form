@@ -1,0 +1,157 @@
+*, 
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--red) url(../images/bg-intro-mobile.png) center;
+    font-family: var(--poppins);
+}
+
+.main {
+    padding: 0.5rem;
+}
+
+
+
+/* section  intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro__title {
+    font-weight: var(--bold);
+    color: white;
+    font-size: 2rem;
+    margin: 5rem 0 2rem 0;
+}
+
+.intro__caption {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.8;
+    line-height: 1.5rem;
+    font-weight: var(--medium);
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* form section */
+.message {
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+    padding: 1.3rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.063rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.message__price {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5rem;
+    font-weight: var(--regular);
+}
+
+.message__price span {
+    font-weight: var(--bold);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 0.063rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.form__label {
+    position: relative;
+    width: 100%;
+}
+
+
+.form__input {
+    width: 100%;
+    border: 0.063rem solid var(--grayish-blue);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+
+.form__input:focus {
+    outline: 0.063rem solid rgba(0, 0, 0, 0.8);
+}
+
+
+.form__input::placeholder {
+    font-size: 0.8rem;
+    font-weight: var(--bold);
+}
+
+.form__btn {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: var(--medium);
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 0px 0.188rem 0px 0px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+
+.form__caption {
+    font-size: 0.6rem;
+    text-align: center;
+    font-weight: var(--regular);
+    color: var(--grayish-blue);
+    line-height: 1rem;
+    width: 90%;
+}
+
+.form__terms {
+    text-decoration: none;
+    color: var(--red);
+    font-weight: var(--bold);
+}
+
+.form__error {
+    font-size: 0.6rem;
+    text-align: right;
+    margin-top: 0.3rem;
+    color: var(--red);
+    font-weight: var(--medium);
+    display: none;
+}
+
+.form__label::before {
+    position: absolute;
+    content: "";
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: 1.5rem;
+    background: url(../images/icon-error.svg) no-repeat right;
+    display: none;
+}
